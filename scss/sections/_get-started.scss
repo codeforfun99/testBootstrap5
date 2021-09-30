@@ -1,0 +1,50 @@
+@use "../components/mixins" as *;
+@use "../custom" as *;
+
+.get-started {
+  margin-top: 5rem;
+  background: linear-gradient(to right, $gray-300, $gray-100);
+  &__info {
+    opacity: 0.9;
+    color: $white;
+    margin: 0;
+    padding: 4rem 3rem;
+
+    h3,
+    p,
+    ul,
+    li {
+      text-align: justify;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      list-style-type: none;
+      margin: 0 0 0 1rem;
+      padding: 0 0 0 0;
+
+      i {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__form {
+    padding: 3rem;
+
+    h4 {
+      font-size: 1.2rem;
+      color: $primary;
+      margin: 1rem 0 2rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.7rem 2rem;
+    }
+  }
+}

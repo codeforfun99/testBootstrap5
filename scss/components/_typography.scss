@@ -1,0 +1,43 @@
+@use "../components/mixins" as *;
+@use "../custom" as *;
+
+.heading-line {
+  &::before {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    margin: 0 auto;
+    display: block;
+    background-color: $primary;
+  }
+
+  &::after {
+    content: "";
+    width: 3rem;
+    height: 0.3rem;
+    margin: 0 auto;
+    display: block;
+    background-color: $primary;
+  }
+}
+
+.display-3 {
+  text-align: center;
+  font-weight: 700;
+  @include main-font;
+}
+
+.display-6 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.lead {
+  text-align: center;
+}
+
+.gradient {
+  background: linear-gradient(to right, $primary, $pink);
+}

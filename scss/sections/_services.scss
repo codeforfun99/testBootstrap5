@@ -1,0 +1,37 @@
+@use "../components/mixins" as *;
+@use "../custom" as *;
+
+.border-right {
+  border-right: 0.1rem solid $gray-500;
+  height: 100%;
+}
+
+#services {
+  .serivces__brief {
+    padding: 1rem;
+    margin-left: 1rem;
+  }
+
+  button {
+    border: $primary 0.1rem solid;
+    background-color: $white;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.services__ {
+  &content {
+    // padding: 0 3rem 0 0;
+    i {
+      color: $primary;
+      font-size: 1.5rem;
+    }
+
+    h5 {
+      color: $primary;
+    }
+  }
+}

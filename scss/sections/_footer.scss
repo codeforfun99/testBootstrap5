@@ -1,0 +1,106 @@
+@use "../components/mixins" as *;
+@use "../custom" as *;
+
+#footer {
+  background-color: $gray-900;
+}
+
+.footer {
+  &__contact {
+    padding: 2rem 0;
+
+    &-box {
+      align-items: center;
+      justify-content: space-between;
+      &--icon {
+        font-size: 4rem;
+        color: $primary;
+        display: inline;
+        flex-basis: 10px;
+      }
+
+      &--info {
+        flex-grow: 3;
+        a {
+          display: block;
+          text-decoration: none;
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: $white;
+
+          &:hover {
+            color: $primary;
+          }
+        }
+
+        span {
+          display: block;
+          color: $gray-500;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  //   Footer social
+  &__social {
+    padding: 2rem 0 1rem 0;
+    background-color: $gray-800;
+    color: $white;
+
+    text-align: center;
+
+    i {
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+    }
+    a {
+      color: $white;
+    }
+    a:hover {
+      color: $primary;
+    }
+  }
+
+  //   Footer links
+  &__links {
+    background-color: $gray-900;
+    color: $white;
+    margin: 2rem 0;
+
+    hr {
+      width: 4rem;
+      height: 0.1rem;
+      margin-bottom: 1rem;
+    }
+
+    p,
+    a {
+      display: block;
+      font-weight: 400;
+      text-decoration: none;
+      color: $white;
+      line-height: 2;
+    }
+    a:hover {
+      color: $primary;
+    }
+  }
+
+  //   Copy right
+  &__copyright {
+    background-color: $black;
+    color: $gray-200;
+    padding: 2rem 0;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: $white;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use "../components/mixins" as *;
+@use "../custom" as *;
+
+#navbar {
+  @include gradient;
+
+  a {
+    color: $white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+  }
+}

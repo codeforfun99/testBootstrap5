@@ -1,0 +1,47 @@
+@use "../components/mixins" as *;
+@use "../custom" as *;
+
+#heroes {
+  @include gradient;
+  padding-top: 10rem;
+  @include main-font;
+  color: $white;
+
+  h3 {
+    font-size: 4.5rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1.5rem 0 1rem;
+  }
+
+  .player {
+    @include absoluteCenter;
+    // left: 40% !important;
+    color: $secondary;
+    font-size: 6rem;
+    line-height: 1em;
+  }
+}
+
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  border: 0.5rem solid $white;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
+
+  &--border-1 {
+    animation-delay: 1s;
+  }
+
+  &--border-2 {
+    animation-delay: 2s;
+  }
+}
